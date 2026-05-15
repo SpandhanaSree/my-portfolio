@@ -1,17 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-body {
-    background: #080808;
+body{
+    background: #f1f1f1;
     color: #fff;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/bg.png);
     background-size: cover;
     background-position: center;
 }
