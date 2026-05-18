@@ -5,13 +5,16 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #f1f1f1;
+    background: #080808;
     color: #fff;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/bg.png);
+    background-image: url(images/bg1.png);
     background-size: cover;
     background-position: center;
+}
+.container{
+    padding: 10px 10%;
 }
