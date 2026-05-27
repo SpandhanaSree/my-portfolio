@@ -11,7 +11,7 @@
     <div id="header">
         <div class ="container">
             <nav>
-                <img src="images/logo1.jpg" width="100" height="60" class="logo">
+                <img src="images/logo.png" width="450" height="70" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -21,11 +21,69 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <br>
-                <p>Sample Portfolio</p>
-                <h1>Hi, I'm <span>Spandhana Sree</span></h1>
+                <p>Sample Portfolio !!</p>
+                <h1>Hi, This is a <span>Sample Portfolio</span></h1>
             </div>
         </div>  
     </div>
+    <!----------- About Section -------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Spandhana — a passionate Web Developer and tech enthusiast who loves creating modern, responsive, and user-friendly websites. I enjoy turning ideas into real digital experiences using clean design and efficient code. Currently, I’m exploring full-stack development and continuously improving my skills in frontend and backend technologies. I’m always excited to learn new tools, build creative projects, and grow as a developer. I believe in consistency, creativity, and writing code that not only works well but also looks great.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing  Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>UI/UX Design Traning at ET Institute</li>
+                                <li><span>2019 - 2021</span><br>Team Lead at XYZ Company</li>
+                                <li><span>2017 - 2019</span><br>UI/UX Design Executive at ABC Company</li>
+                                <li><span>2016 - 2017</span><br>Intern at DEF Company</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>UI/UX Design Traning at ET Institute</li>
+                                <li><span>2016</span><br>BTech in Computer Science</li>
+                                <li><span>2014</span><br>Higher Secondary Education</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablinks of tablinks) {
+            tablinks.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontents) {
+            tabcontents.classList.remove("active-tab");
+        }    
+        event.currentTarget.classList.add("active-link"); 
+        document.getElementById(tabname).classList.add("active-tab");     
+    }
+</script>
 </body>
 </html>
